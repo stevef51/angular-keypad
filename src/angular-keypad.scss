@@ -76,24 +76,11 @@
       right: 0;
       top: 0;
       text-align: center;
-      width: 100%;
+      width: 95%;
 
       // you should define your own 'active' styles per project
       &:focus {
         outline: 0;
-      }
-
-      // create pseudo element for underline
-      &::after {
-        background-color: $color_light_gray;
-        content: '';
-        display: block;
-        height: 1px;
-        position: absolute;
-        left: 10%;
-        right: 10%;
-        // angular-ripple adds overflow: hidden so this cannot be below 0
-        bottom: 0;
       }
 
       // icon
