@@ -416,7 +416,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	var path = '/angular-keypad/src/templates/backspace-left.html';
-	var html = "<md-button class=\"bc-keypad__key-button bc-keypad__key-button--backspace md-raised md-accent\" data-ng-click=\"vm.leftButtonTrigger($event, vm.bcLeftButton)\" aria-role=Backspace> <ng-include src=\" vm.bcKeypadConfig.backspaceTemplate \"></ng-include> </md-button>";
+	var html = "<md-button class=\"md-raised md-accent bc-keypad__key-button bc-keypad__key-button--backspace\" data-ng-click=\"vm.leftButtonTrigger($event, vm.bcLeftButton)\" aria-role=Backspace> <ng-include src=\" vm.bcKeypadConfig.backspaceTemplate \"></ng-include> </md-button>";
 	window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 	module.exports = path;
 
@@ -425,7 +425,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	var path = '/angular-keypad/src/templates/backspace-right.html';
-	var html = "<md-button class=\"bc-keypad__key-button bc-keypad__key-button--backspace md-raised md-accent\" data-ng-click=\"vm.rightButtonTrigger($event, vm.bcRightButton)\" aria-role=Backspace> <ng-include src=\" vm.bcKeypadConfig.backspaceTemplate \"></ng-include> </md-button>";
+	var html = "<md-button class=\"md-raised md-accent bc-keypad__key-button bc-keypad__key-button--backspace\" data-ng-click=\"vm.rightButtonTrigger($event, vm.bcRightButton)\" aria-role=Backspace> <ng-include src=\" vm.bcKeypadConfig.backspaceTemplate \"></ng-include> </md-button>";
 	window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 	module.exports = path;
 
@@ -434,7 +434,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	var path = '/angular-keypad/src/templates/submit-left.html';
-	var html = "<md-button class=\"bc-keypad__key-button bc-keypad__key-button--submit md-raised md-primary\" data-ng-click=\"vm.leftButtonTrigger($event, vm.bcLeftButton)\" aria-role=Submit> <ng-include src=\" vm.bcKeypadConfig.submitTemplate \"></ng-include> </md-button>";
+	var html = "<md-button class=\"md-raised md-primary bc-keypad__key-button bc-keypad__key-button--submit\" data-ng-click=\"vm.leftButtonTrigger($event, vm.bcLeftButton)\" aria-role=Submit> <ng-include src=\" vm.bcKeypadConfig.submitTemplate \"></ng-include> </md-button>";
 	window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 	module.exports = path;
 
@@ -443,7 +443,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	var path = '/angular-keypad/src/templates/submit-right.html';
-	var html = "<md-button class=\"bc-keypad__key-button bc-keypad__key-button--submit md-raised md-primary\" data-ng-click=\"vm.rightButtonTrigger($event, vm.bcRightButton)\" aria-role=Submit> <ng-include src=\" vm.bcKeypadConfig.submitTemplate \"></ng-include> </md-button>";
+	var html = "<md-button class=\"md-raised md-primary bc-keypad__key-button bc-keypad__key-button--submit\" data-ng-click=\"vm.rightButtonTrigger($event, vm.bcRightButton)\" aria-role=Submit> <ng-include src=\" vm.bcKeypadConfig.submitTemplate \"></ng-include> </md-button>";
 	window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 	module.exports = path;
 
@@ -452,7 +452,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	var path = '/angular-keypad/src/templates/keypad.html';
-	var html = "<div class=bc-keypad> <div class=bc-keypad__key data-ng-repeat=\"number in ::vm.numbers track by number\"> <md-button class=\"bc-keypad__key-button md-raised\" data-ng-click=vm.setNumber(number) aria-role=\"{{ ::number }}\"> {{ ::number }} </md-button> </div> <div class=\"bc-keypad__key bc-keypad__key--left\"> <ng-include src=\"vm.keyTemplate(vm.bcLeftButton, 'Left')\"></ng-include> </div> <div class=\"bc-keypad__key bc-keypad__key--center\"> <md-button class=\"bc-keypad__key-button md-raised\" data-ng-click=vm.setNumber(vm.lastNumber)> {{ ::vm.lastNumber }} </md-button> </div> <div class=\"bc-keypad__key bc-keypad__key--right\"> <ng-include src=\"vm.keyTemplate(vm.bcRightButton, 'Right')\"></ng-include> </div> </div>";
+	var html = "<div class=bc-keypad> <div class=bc-keypad__key data-ng-repeat=\"number in ::vm.numbers track by number\"> <md-button class=\"md-raised bc-keypad__key-button\" data-ng-click=vm.setNumber(number) aria-role=\"{{ ::number }}\"> {{ ::number }} </md-button> </div> <div class=\"bc-keypad__key bc-keypad__key--left\"> <ng-include src=\"vm.keyTemplate(vm.bcLeftButton, 'Left')\"></ng-include> </div> <div class=\"bc-keypad__key bc-keypad__key--center\"> <md-button class=\"md-raised bc-keypad__key-button\" data-ng-click=vm.setNumber(vm.lastNumber)> {{ ::vm.lastNumber }} </md-button> </div> <div class=\"bc-keypad__key bc-keypad__key--right\"> <ng-include src=\"vm.keyTemplate(vm.bcRightButton, 'Right')\"></ng-include> </div> </div>";
 	window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 	module.exports = path;
 

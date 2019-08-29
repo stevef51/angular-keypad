@@ -1,7 +1,7 @@
 <div class="bc-keypad">
 
   <div class="bc-keypad__key" data-ng-repeat="number in ::vm.numbers track by number">
-    <md-button class="bc-keypad__key-button md-raised" data-ng-click="vm.setNumber(number)" aria-role="{{ ::number }}">
+    <md-button class="md-raised bc-keypad__key-button " data-ng-click="vm.setNumber(number)" aria-role="{{ ::number }}">
       {{ ::number }}
     </md-button>
   </div>
@@ -13,7 +13,7 @@
 
 
   <div class="bc-keypad__key  bc-keypad__key--center">
-    <md-button class="bc-keypad__key-button md-raised" data-ng-click="vm.setNumber(vm.lastNumber)">
+    <md-button class="md-raised bc-keypad__key-button " data-ng-click="vm.setNumber(vm.lastNumber)">
       {{ ::vm.lastNumber }}
     </md-button>
   </div>
