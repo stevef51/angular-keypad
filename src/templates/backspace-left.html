@@ -1,9 +1,4 @@
-<button
-  class="bc-keypad__key-button  bc-keypad__key-button--backspace"
-  data-ng-click="vm.leftButtonTrigger($event, vm.bcLeftButton)"
-  angular-ripple
-  aria-role="Backspace"
->
+<md-button class="bc-keypad__key-button  bc-keypad__key-button--backspace md-raised md-accent"
+  data-ng-click="vm.leftButtonTrigger($event, vm.bcLeftButton)" aria-role="Backspace">
   <ng-include src=" vm.bcKeypadConfig.backspaceTemplate "></ng-include>
-</button>
-
+</md-button>

@@ -1,5 +1,4 @@
 .bc-keypad {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -9,19 +8,10 @@
   text-align: center;
 }
 
-@-webkit-keyframes ripple {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
-  }
-}
-
 @keyframes ripple {
   100% {
     opacity: 0;
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
+    transform: scale(2.5);
   }
 }
 
@@ -30,13 +20,11 @@
   border-radius: 50%;
   display: block;
   position: absolute;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 .bc-keypad .angular-ripple.animate {
-  -webkit-animation: ripple .3s linear;
-          animation: ripple .3s linear;
+  animation: ripple .3s linear;
 }
 
 .bc-keypad__key {
@@ -68,22 +56,11 @@
   right: 0;
   top: 0;
   text-align: center;
-  width: 100%;
+  width: 95%;
 }
 
 .bc-keypad__key-button:focus {
   outline: 0;
-}
-
-.bc-keypad__key-button::after {
-  background-color: #ccc;
-  content: '';
-  display: block;
-  height: 1px;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  bottom: 0;
 }
 
 .bc-keypad__key-button svg {
@@ -91,8 +68,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 50px;
 }
 
