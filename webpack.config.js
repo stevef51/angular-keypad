@@ -38,7 +38,7 @@ var config = {
             },
             {
                 test: /\.(html|svg)$/,
-                loader: 'ngtemplate!html'
+                loader: `ngtemplate?relativeTo=${path.resolve(__dirname, '..')}!html`
             }
         ]
     },
